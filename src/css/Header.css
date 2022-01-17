@@ -1,0 +1,9 @@
+@media screen and (min-width: 1200px) {
+  .header-wrap {
+    width: 1060px;
+    height: 50px;
+    margin: 0 auto;
+    background-color: bisque;
+  }
+}
+
