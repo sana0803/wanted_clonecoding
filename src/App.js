@@ -10,7 +10,7 @@ class App extends Component {
         <header className='app-header'>
           <TopHeader />
         </header>
-        <main>
+        <main className='main'>
           <Slide />
         </main>
       </div>

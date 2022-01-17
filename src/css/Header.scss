@@ -1,0 +1,125 @@
+nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: yellowgreen;
+
+  li {
+    display: inline-block;
+  }
+}
+
+li a {
+  text-decoration: none;
+  color: #333;
+  vertical-align: middle;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  padding: 15px;
+  display: inline-block;
+}
+
+@media screen and (min-width: 1200px) {
+  .header-wrap {
+    margin: 0 auto;
+    max-width: 1060px;
+    height: 50px;
+    background-color: bisque;
+  }
+
+  .nav-first {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    div {
+      display: flex;
+    }
+  }
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .header-wrap {
+    margin: 0 auto;
+    height: 50px;
+    max-width: 1060px;
+    background-color: pink;
+  }
+
+  .nav-first {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+  .nav-third {
+    padding: 9px 0;
+    background-color: gold;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1100px) {
+  .nav-second {
+    height: inherit;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: aquamarine;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .header-wrap {
+    margin: 0 auto;
+    width: 90%;
+    height: 110px;
+    background-color: lightblue;
+    // display: flex;
+    // flex-direction: row;
+    // flex-wrap: wrap;
+    // align-items: center;
+    // justify-content: space-between;
+  }
+
+  .nav-first {
+    // padding: 15px 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: coral;
+
+    div {
+      display: flex;
+    }
+  }
+
+  .nav-second {
+
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 30px;
+    background-color: lightseagreen;
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .header-wrap {
+    height: 110px;
+    background-color: thistle;
+  }
+}
