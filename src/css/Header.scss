@@ -1,3 +1,41 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('https://d1azc1qln24ryf.cloudfront.net/78252/wantedicon/icomoon.eot?8et930');
+  src:  url('https://d1azc1qln24ryf.cloudfront.net/78252/wantedicon/icomoon.eot?8et930#iefix') format('embedded-opentype'),
+    url('https://d1azc1qln24ryf.cloudfront.net/78252/wantedicon/icomoon.woff2?8et930') format('woff2'),
+    url('https://d1azc1qln24ryf.cloudfront.net/78252/wantedicon/icomoon.ttf?8et930') format('truetype'),
+    url('https://d1azc1qln24ryf.cloudfront.net/78252/wantedicon/icomoon.woff?8et930') format('woff'),
+    url('https://d1azc1qln24ryf.cloudfront.net/78252/wantedicon/icomoon.svg?8et930#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.icon-logo_new:before {
+  content: "\e992";
+  font-size: 17px;
+  color: rgb(41, 41, 45);
+}
+
 nav {
   width: 100%;
   display: flex;
@@ -7,32 +45,168 @@ nav {
   flex-wrap: wrap;
 }
 
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+}
+
 ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  background-color: yellowgreen;
+  background-color: #fff;
 
   li {
     display: inline-block;
+    position: relative;
+  }
+
+  .sm-home {
+    display: none;
   }
 }
 
 li a {
   text-decoration: none;
-  color: #333;
+  color: inherit;
   vertical-align: middle;
   font-size: 14px;
   line-height: 20px;
   font-weight: 600;
   padding: 15px;
   display: inline-block;
+  position: relative;
+  
+  em {
+    position: absolute;
+    pointer-events: none;
+    font-style: normal;
+    top: 10px;
+    right: -5px;
+  }
+
+  span {
+    position: absolute;
+    pointer-events: none;
+    top: 10px;
+    right: -7px;
+  }
+}
+
+.top-logo-wrap {
+  display: flex;
+  background-color: aquamarine;
+}
+
+.main-logo {
+  text-decoration: none;
+  background-color: #258bf7;
+  display: block;
+}
+
+.main-hamberger {
+  margin-top: -2px;
+  margin-right: 15px;
+  cursor: pointer;
+  overflow: visible;
+
+  img {
+    vertical-align: middle;
+  }
+}
+
+.nav-third {
+  ul li {
+    height: 100%;
+    vertical-align: middle;
+  }
+}
+
+.noti-btn {
+  position: relative;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+.new-badge {
+  background-color: rgb(51, 102, 255);
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  top: -4px;
+  left: 24px;
+}
+
+.profile-box {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 5px;
+}
+
+.profile-btn {
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  vertical-align: top;
+  padding: 0;
+  margin-right: 11px;
+
+  .avatar-border {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid #e1e2e3;
+    background-color: #fff;
+  }
+}
+
+.avatar-img {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.left-div {
+  display: inline-flex;
+}
+
+.left-div::before {
+  display: block;
+  content: "";
+  width: 1px;
+  height: 10px;
+  background-color: #e1e2e3;
+  margin: auto 10px;
+}
+
+.dashboard-btn {
+  font-size: 13px;
+  color: #666;
+  line-height: 30px;
+  height: 30px;
+  border: 1px solid #e1e2e3;
+  border-radius: 15px;
+  padding: 0 10px;
+  margin-left: 15px;
+  font-weight: 400;
 }
 
 @media screen and (min-width: 1200px) {
   .header-wrap {
     margin: 0 auto;
     max-width: 1060px;
+    width: 87.72%;
     height: 50px;
     background-color: bisque;
   }
@@ -45,13 +219,20 @@ li a {
     div {
       display: flex;
     }
-  }
 
+    .nav-third {
+      ul li {
+        height: 100%;
+        padding: 0 10px;
+      }
+    }
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
   .header-wrap {
     margin: 0 auto;
+    width: 90%;
     height: 50px;
     max-width: 1060px;
     background-color: pink;
@@ -63,10 +244,13 @@ li a {
     align-items: center;
   }
 
-
   .nav-third {
     padding: 9px 0;
     background-color: gold;
+
+    ul li {
+      padding: 0 10px;
+    }
   }
 }
 
@@ -77,6 +261,26 @@ li a {
     justify-content: space-evenly;
     text-align: center;
     background-color: aquamarine;
+
+    li a {
+      font-size: 13px;
+      position: relative; 
+    }
+
+    li a>em {
+      pointer-events: none;
+      font-style: normal;
+      position: absolute;
+      top: 10px;
+      right: -20px;
+    }
+
+    li a>span {
+      pointer-events: none;
+      position: absolute;
+      top: 9px;
+      right: -20px;
+    }
   }
 }
 
@@ -107,13 +311,42 @@ li a {
     }
   }
 
-  .nav-second {
+  .main-logo {
+    position: relative;
+    float: left;
+  }
 
+  .nav-second {
     display: flex;
     justify-content: flex-start;
     margin-right: 30px;
     background-color: lightseagreen;
     text-align: center;
+    
+    li a {
+      font-size: 13px;
+      padding: 11px 10px 19px;
+      position: relative; 
+    }
+
+    li a>em {
+      pointer-events: none;
+      font-style: normal;
+      position: absolute;
+      top: 5px;
+      right: -7px;
+    }
+
+    li a>span {
+      pointer-events: none;
+      position: absolute;
+      top: 4px;
+      right: -8px;
+    }
+  }
+
+  .md-visible {
+    display: none;
   }
 }
 
@@ -121,5 +354,36 @@ li a {
   .header-wrap {
     height: 110px;
     background-color: thistle;
+  }
+
+  .nav-first {
+    padding: 0 20px;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: azure;
+  }
+
+  .nav-second {
+    text-align: left;
+    
+    li a {
+      padding: 11px 10px 19px;
+    }
+
+    .sm-visible {
+      display: none;
+    }
+
+    .sm-home {
+      display: inline-block;
+      box-shadow: inset 0 -2px #258bf7;
+      
+      a {
+        padding-left: 20px;
+      }
+    }    
   }
 }
