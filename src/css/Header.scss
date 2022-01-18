@@ -50,6 +50,7 @@ button {
   padding: 0;
   border: 0;
   background: none;
+  cursor: pointer;
 }
 
 ul {
@@ -95,21 +96,29 @@ li a {
   }
 }
 
+.nav-first {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  div {
+    display: flex;
+  }    
+}
+
 .top-logo-wrap {
   display: flex;
-  background-color: aquamarine;
+  background-color: #fff;
 }
 
 .main-logo {
   text-decoration: none;
-  background-color: #258bf7;
   display: block;
 }
 
 .main-hamberger {
   margin-top: -2px;
   margin-right: 15px;
-  cursor: pointer;
   overflow: visible;
 
   img {
@@ -118,10 +127,24 @@ li a {
 }
 
 .nav-third {
+  padding: 9px 0;
+  height: 100%;
+
   ul li {
+    position: relative;
     height: 100%;
+    // display: inline-block;
     vertical-align: middle;
   }
+
+  ul>li>* {
+    padding: 0 5px;
+  }
+}
+
+.search-btn {
+  position: relative;
+  margin-top: 5px;
 }
 
 .noti-btn {
@@ -137,6 +160,11 @@ li a {
   position: absolute;
   top: -4px;
   left: 24px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  padding: 0 !important;
 }
 
 .profile-box {
@@ -202,30 +230,36 @@ li a {
   font-weight: 400;
 }
 
+.menu-btn {
+  padding-left: 10px !important;
+  margin-right: 10px;
+
+  img {
+    vertical-align: middle;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .header-wrap {
     margin: 0 auto;
     max-width: 1060px;
     width: 87.72%;
     height: 50px;
-    background-color: bisque;
+    // background-color: bisque;
   }
 
-  .nav-first {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    div {
-      display: flex;
+  .nav-third {
+    ul>li>* {
+      padding: 0 10px;
     }
 
-    .nav-third {
-      ul li {
-        height: 100%;
-        padding: 0 10px;
-      }
+    .profile-btn {
+      padding: 0;
     }
+  }
+
+  .aside-visible-menu {
+    display: none!important;
   }
 }
 
@@ -235,22 +269,25 @@ li a {
     width: 90%;
     height: 50px;
     max-width: 1060px;
-    background-color: pink;
-  }
-
-  .nav-first {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    // background-color: pink;
   }
 
   .nav-third {
     padding: 9px 0;
-    background-color: gold;
 
-    ul li {
+    .profile-btn {
+      margin-right: 0;
+      padding: 0;
+    }
+
+    .dashboard-btn {
+      margin: 0;
       padding: 0 10px;
     }
+  }
+
+  .aside-visible-menu {
+    display: none!important;
   }
 }
 
@@ -260,7 +297,7 @@ li a {
     display: flex;
     justify-content: space-evenly;
     text-align: center;
-    background-color: aquamarine;
+    // background-color: aquamarine;
 
     li a {
       font-size: 13px;
@@ -272,14 +309,14 @@ li a {
       font-style: normal;
       position: absolute;
       top: 10px;
-      right: -20px;
+      // right: -20px;
     }
 
     li a>span {
       pointer-events: none;
       position: absolute;
       top: 9px;
-      right: -20px;
+      // right: -20px;
     }
   }
 }
@@ -289,26 +326,12 @@ li a {
     margin: 0 auto;
     width: 90%;
     height: 110px;
-    background-color: lightblue;
-    // display: flex;
-    // flex-direction: row;
-    // flex-wrap: wrap;
-    // align-items: center;
-    // justify-content: space-between;
   }
 
   .nav-first {
-    // padding: 15px 0;
     width: 100%;
     height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: coral;
-
-    div {
-      display: flex;
-    }
+    // background-color: coral;
   }
 
   .main-logo {
@@ -320,7 +343,6 @@ li a {
     display: flex;
     justify-content: flex-start;
     margin-right: 30px;
-    background-color: lightseagreen;
     text-align: center;
     
     li a {
@@ -344,6 +366,19 @@ li a {
       right: -8px;
     }
   }
+  
+  .noti-btn {
+    margin: 5px 0 0 0;
+  }
+
+  .new-badge {    
+    top: 0;
+    left: 22px;
+  }
+
+  .menu-btn {
+    margin-right: 0;
+  }
 
   .md-visible {
     display: none;
@@ -353,17 +388,12 @@ li a {
 @media (max-width: 767px) {
   .header-wrap {
     height: 110px;
-    background-color: thistle;
   }
 
   .nav-first {
     padding: 0 20px;
     width: 100%;
     height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: azure;
   }
 
   .nav-second {
@@ -386,4 +416,21 @@ li a {
       }
     }    
   }
+
+  .nav-third {
+    margin-top: -5px;
+  }
+
+  .noti-btn {
+    margin: 5px 0 0 0;
+  }
+
+  .new-badge {    
+    top: 0;
+    left: 22px;
+  }
+
+  .md-visible {
+    display: none;
+  }  
 }

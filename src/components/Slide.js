@@ -1,10 +1,16 @@
 import React, { Component } from 'react';
+import '../css/Slide.scss'
 
 class Slide extends Component {
   render() {
     return (
-      <div>
-        슬라이드 들어가는 자리입니다
+      <div className='slide-content'>
+        <div className='top-banner'>
+          <div className='slide-wrap'>
+            <div className='slide-list'>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }

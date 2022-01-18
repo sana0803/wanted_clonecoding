@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
 import '../css/Header.scss'
-import SearchIcon from '../assets/tmp.svg'
+import SearchIcon from '../assets/search.svg'
+import BellIcon from '../assets/bell.svg'
+import MenuIcon from '../assets/menu.svg'
 
 class TopHeader extends Component {
 
   render() {
     const hambergerMenu = 'https://static.wanted.co.kr/images/icon-menu.png'
     const w3Svg = 'https://www.w3.org/2000/svg'
-    // const w3Xlink = 'https://www.w3.org/1999/xlink'
   
     return (
-      <div className='header-wrap'> {/* 1060 설정할 div */}
+      <div className='header-wrap'>
         <nav>
           <div className='nav-first'>
             <div className='top-logo-wrap'>
@@ -77,13 +78,13 @@ class TopHeader extends Component {
           <aside className='nav-third'>
             <ul>
               <li>
-                <button type="button" aria-label="searchButton" class="searchButton" data-attribute-id="gnb" data-gnb-kind="search">
+                <button type="button" aria-label="search-btn" className="search-btn">
                   <img src={ SearchIcon }></img>
                 </button>
               </li>
               <li>            
-                <button type="button" aria-label="noti-btn" className="noti-btn" data-attribute-id="gnb" data-gnb-kind="bell">
-                  종                  
+                <button type="button" aria-label="noti-btn" className="noti-btn">
+                  <img src={ BellIcon }></img>               
                 </button>
                 <span className="new-badge" style={{backgroundColor: 'rgb(51, 102, 255)', width: '13px', height: '13px'}}>
                   <svg width="5" height="5" viewBox="0 0 6 6">
@@ -105,23 +106,9 @@ class TopHeader extends Component {
               <li className='left-div md-visible'>
                 <a href='#' className='dashboard-btn'>기업 서비스</a>
               </li>
-              <li>
-                <button className="menu-btn" aria-label="menu-btn" type="button" data-attribute-id="gnb" data-gnb-kind="more">
-                  {/* <svg width="18" height="18" xmlns={ w3Svg }>
-                    <defs>
-                      <path d="M9 7.5a1.5 1.5 0 1 1-.001 3.001A1.5 1.5 0 0 1 9 7.5zm5.05 0a1.5 1.5 0 1 1-.001 3.001A1.5 1.5 0 0 1 14.05 7.5zM4 7.5a1.5 1.5 0 1 1-.001 3.001A1.5 1.5 0 0 1 4 7.5z" id="a">
-                      </path>
-                    </defs>
-                    <g fill="none" fillRule="evenodd">
-                      <mask id="b" fill="#fff">
-                        <use xlink:href="#a"></use>
-                      </mask>
-                      <use fill="#333" xlink:href="#a"></use>
-                      <g mask="url(#b)" fill="#333">
-                        <path d="M0 0h18v18H0z"></path>
-                      </g>
-                    </g>
-                  </svg> */}
+              <li className='aside-visible-menu'>
+                <button className="menu-btn" aria-label="menu-btn" type="button" data-gnb-kind="more">
+                  <img src={ MenuIcon }></img>
                 </button>
               </li>
             </ul>
