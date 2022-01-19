@@ -254,7 +254,6 @@ ul {
     max-width: 1060px;
     width: 87.72%;
     height: 50px;
-    // background-color: bisque;
   }
 
   .nav-third {
@@ -278,7 +277,6 @@ ul {
     width: 90%;
     height: 50px;
     max-width: 1060px;
-    // background-color: pink;
   }
 
   .nav-third {
@@ -306,7 +304,6 @@ ul {
     display: flex;
     justify-content: space-evenly;
     text-align: center;
-    // background-color: aquamarine;
 
     li a {
       font-size: 13px;
@@ -318,14 +315,12 @@ ul {
       font-style: normal;
       position: absolute;
       top: 10px;
-      // right: -20px;
     }
 
     li a>span {
       pointer-events: none;
       position: absolute;
       top: 9px;
-      // right: -20px;
     }
   }
 }
@@ -344,7 +339,6 @@ ul {
   .nav-first {
     width: 100%;
     height: 60px;
-    // background-color: coral;
   }
 
   .main-logo {

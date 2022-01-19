@@ -10,7 +10,7 @@ const Slide = () => {
 
     // Next 버튼 클릭 시
     const NextSlide = () => {
-      console.log('다음버튼 클릭')
+      // console.log('다음버튼 클릭')
       if (currentSlide >= TOTAL_SLIDES) {
         // 더 이상 넘어갈 슬라이드가 없으면
         setCurrentSlide(0); // 1번째 사진으로 넘어갑니다.
@@ -21,7 +21,7 @@ const Slide = () => {
     };
     // Prev 버튼 클릭 시
     const PrevSlide = () => {
-      console.log('이전버튼 클릭')
+      // console.log('이전버튼 클릭')
       if (currentSlide === 0) {
         setCurrentSlide(TOTAL_SLIDES);
         // return;  // 클릭이 작동하지 않습니다.
@@ -31,9 +31,9 @@ const Slide = () => {
     };
 
     useEffect(() => {
-      slideRef.current.style.transition = 'all 0.4s ease-in-out';
-      slideRef.current.style.transform = `translateX(-${currentSlide}00%)`;
-      console.log(currentSlide)
+      slideRef.current.style.transition = 'all 0.4s ease-in-out'
+      slideRef.current.style.transform = `translateX(-${currentSlide}0%)`
+      // slideRef.current.style.filter = 'brightness(100%)'      
     }, [currentSlide]);
 
     return (
