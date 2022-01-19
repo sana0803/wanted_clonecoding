@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import TopHeader from './components/TopHeader';
 import Slide from './components/Slide';
+import SlideTest from './components/SlideTest';
 
 class App extends Component {
   render() {
@@ -13,6 +14,7 @@ class App extends Component {
         <div className='padding-box'></div>
         <main className='main'>
           <Slide />
+          <SlideTest />
         </main>
       </div>
     );
