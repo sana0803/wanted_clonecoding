@@ -104,7 +104,9 @@ class TopHeader extends Component {
                 </button>
               </li>
               <li className='left-div md-visible'>
-                <a href='#' className='dashboard-btn'>기업 서비스</a>
+                <span className='dashboard-btn'>
+                  <a href='#'>기업 서비스</a>
+                </span>
               </li>
               <li className='aside-visible-menu'>
                 <button className="menu-btn" aria-label="menu-btn" type="button" data-gnb-kind="more">

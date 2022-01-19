@@ -76,8 +76,7 @@ ul {
   height: 50px;
 }
 
-.header-wrap li a {
-  text-decoration: none;
+.header-wrap li > a {
   color: inherit;
   vertical-align: middle;
   font-size: 14px;
@@ -227,7 +226,6 @@ ul {
 
 .dashboard-btn {
   font-size: 13px;
-  color: #666;
   line-height: 30px;
   height: 30px;
   border: 1px solid #e1e2e3;
@@ -235,6 +233,10 @@ ul {
   padding: 0 10px;
   margin-left: 15px;
   font-weight: 400;
+
+  a {    
+    color: #666;
+  }
 }
 
 .menu-btn {
