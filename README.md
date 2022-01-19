@@ -3,9 +3,13 @@
 
 
 
-## 시작하는 법
+## 실행 방법
 
-- VS Code로 실행 후 bash 터미널 창에 `npm start` 또는 `yarn start` 를 입력하면 됩니다.
+1. 우측 상단 code -> Download Zip을 클릭해 zip 파일을 다운받습니다.
+2. 압축 파일을 해제합니다.
+3. VS Code 또는 git bash로 실행 후 `npm install react-create-app`을 입력해 react-create-app을 설치합니다.
+4. 그 후  `npm start` 또는 `yarn start` 를 입력해 로컬 호스트를 실행합니다. 
+   ( [http://localhost:3000](http://localhost:3000/) )
 
 
 
@@ -29,7 +33,7 @@
 
 ## 배포 주소
 
-배포하는 과정에서 에러가 떠서.. GIF로 대체합니다 😭
+배포하는 과정에서 알 수 없는 에러가 발생해 GIF로 대체합니다 😭
 
 - 반응형이 작동하는 영상
 
