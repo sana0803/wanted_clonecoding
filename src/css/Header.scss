@@ -53,11 +53,14 @@ button {
   cursor: pointer;
 }
 
+a {
+  text-decoration: none;
+}
+
 ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  background-color: #fff;
 
   li {
     display: inline-block;
@@ -69,7 +72,11 @@ ul {
   }
 }
 
-li a {
+.padding-box {
+  height: 50px;
+}
+
+.header-wrap li a {
   text-decoration: none;
   color: inherit;
   vertical-align: middle;
@@ -322,6 +329,10 @@ li a {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+  .padding-box {
+    height: 110px;
+  }
+
   .header-wrap {
     margin: 0 auto;
     width: 90%;
@@ -386,6 +397,10 @@ li a {
 }
 
 @media (max-width: 767px) {
+  .padding-box {
+    height: 110px;
+  }
+  
   .header-wrap {
     height: 110px;
   }

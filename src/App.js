@@ -10,6 +10,7 @@ class App extends Component {
         <header className='app-header'>
           <TopHeader />
         </header>
+        <div className='padding-box'></div>
         <main className='main'>
           <Slide />
         </main>
