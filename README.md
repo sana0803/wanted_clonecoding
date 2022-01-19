@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+# wanted_pre_onboarding
+> 원티드 프리온보딩 코스_클론 코딩 과제
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+## 시작하는 법
 
-### `npm start`
+- VS Code로 실행 후 bash 터미널 창에 `npm start` 또는 `yarn start` 를 입력하면 됩니다.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## 구현 목록
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![image-20220119175842827](README.assets/image-20220119175842827.png)
 
-### `npm run build`
+![image-20220119180202735](README.assets/image-20220119180202735.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+구현 화면입니다. 구현한 목록은 다음과 같습니다.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- 상단 GNB
+  - HTML, CSS 마크업
+  - 반응형 구현
+- 캐러셀
+  - 버튼 클릭 이벤트
+- 반응형 웹 구현
+  - GNB, 슬라이드 모두 반응형으로 구현
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 배포 주소
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+배포하는 과정에서 에러가 떠서.. GIF로 대체합니다 😭
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- 반응형이 작동하는 영상
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![responsible](README.assets/responsible.gif)
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- 슬라이드가 작동하는 영상
 
-### Code Splitting
+![carousel](README.assets/carousel.gif)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 후기
 
-### Making a Progressive Web App
+carousel 라이브러리를 사용하지 않고 구현한 것이 처음이라 많이 어려웠습니다. 😢 스스로의 부족한 점을 많이 깨닫게 된 과제였습니다.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+특히 carousel의 slide 이벤트를 구현하지 못한게 아쉽습니다. 그 외에도 좌우 버튼 클릭에 따른 슬라이드 이동 이벤트는 구현했지만, 완벽하지 못한 코드라 여러모로 아쉬움이 많이 남습니다.
 
-### Advanced Configuration
+구현하며 특히 어려웠던 점은,
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- 슬라이드 이미지가 끊이지 않고 나오도록 구현 (처음으로 되돌아가기 X)
+- 화면 크기에 따라 carousel에 `transform: translateX()` 스타일을 부여하는 것
+- 현재 보고있는 슬라이드 이미지만 `filter: brightness(100%)`스타일을 주는 것
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+이 정도로 정리해볼 수 있을것 같습니다. 이후에도 좀더 시간을 들여 다듬어보고자 합니다.
